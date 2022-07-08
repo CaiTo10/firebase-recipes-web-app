@@ -11,7 +11,7 @@ const loginUser = (email,password)=>{
 }
 // create logout user handler function
 const logoutUser =()=>{
-    auth.signOut()
+    return auth.signOut()
 }
 
 // create reset password fo user handler function
@@ -26,7 +26,7 @@ const loginWithGoogle=()=>{
 }
 // create subscribe user auth status handler function
 const subscribeToAuthChanges = (handleAuthChange)=>{
-    auth.onAuthStateChanged((user)=>{
+    return auth.onAuthStateChanged((user)=>{
         handleAuthChange(user)
     })
 }

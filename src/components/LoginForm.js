@@ -22,7 +22,7 @@ function LoginForm({existingUser}) {
 
     const onChangeHandler =(name, event)=>{
         if(name === "email"){
-            console.log(event.target.value)
+            // console.log(event.target.value)
             return setusername(event.target.value)
         }else{
             
